@@ -1,8 +1,12 @@
 fn main(){
-    let place1 = "hello";
-	let place2 = "hello".to_string();
-	let other = place1;
-	println!("{:?}",place1);
-	let other = place2;
-	println!("{:?}",place2);
+    let mut a = 1;
+    let b = 2;
+    let c = {
+            a = a + b;
+            a = b
+        };
+    a = 1;
+    println!("{:?}", a = b);
+    println!("{:?}", a);
+    println!("{:?}", c);
 }
