@@ -180,6 +180,8 @@ https://doc.rust-lang.org/reference/introduction.html官方的解析比较全面
 
 把昨天没做完的rustings做完了 ：）。
 
+> 题解目录：https://github.com/stellarkey/os_summer_project/tree/master/rust%20exercise/rustlings/exercises
+
 对rust语言有了一些不一样的理解。
 
 至少，敢去写一点代码了。
