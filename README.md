@@ -173,3 +173,15 @@ https://doc.rust-lang.org/reference/introduction.html官方的解析比较全面
 ---
 
 观看张汉东老师讲座：[GeekPie WorkShop#7「关于Rust你需要了解的…」](https://www.bilibili.com/video/BV1ti4y1b7xy)。
+
+# 7.13 rustings做完辣
+
+今天没做太多东西、
+
+把昨天没做完的rustings做完了 ：）。
+
+对rust语言有了一些不一样的理解。
+
+至少，敢去写一点代码了。
+
+rust的语言特性是如此纷繁，以至于学习它会对学习其他语言起到悠久的影响。
