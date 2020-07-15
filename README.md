@@ -24,6 +24,24 @@
 |  20  |  21  |  22  |  23  |  24  |                              25                              |                              26                              |
 |  27  |  28  |  29  |  30  |      |                                                              |                                                              |
 
+# 总体进度
+
+博客记录：https://vel.life/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9A%91%E6%9C%9F%E9%A1%B9%E7%9B%AE/
+
+## step0
+
+#### rustings练习题
+
+https://github.com/stellarkey/os_summer_project/tree/master/rust%20exercise/rustlings/exercises
+
+#### 编程练习题
+
+https://github.com/stellarkey/os_summer_project/tree/master/rust%20exercise/coding
+
+## step2
+
+
+
 # 7.4 rust语言启程
 
 > [Rust by Example](https://doc.rust-lang.org/rust-by-example/)
@@ -221,3 +239,18 @@ rust的语言特性是如此纷繁，以至于学习它会对学习其他语言�
 博客更新地址：https://vel.life/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9A%91%E6%9C%9F%E9%A1%B9%E7%9B%AE/
 
 > 因为博客本地操作有些问题。所以会更新不及时。近期会抽空解决。
+
+## 完成情况
+
+- [x] 15道编程题
+
+## 预期计划
+
+- 考虑一下更优秀的记录方式，~~不要再记流水账了~~。。
+- 开始入门RISC-V。
+- 深入学习Rust的标准库和高级特性，然后有时间就挑战一下更难的编程题。
+- 开始看rCore的lab。
+
+# 7.16 学习RISC-V和了解rCore
+
+## 事件1 
