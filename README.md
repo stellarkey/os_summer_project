@@ -214,5 +214,10 @@ rust的语言特性是如此纷繁，以至于学习它会对学习其他语言�
 
 算法题总算做了15道。虽然整体难度不高。但是。还算是有所收获。
 
-算法练习记录见：
+算法练习记录见：https://github.com/stellarkey/os_summer_project/tree/master/rust%20exercise/coding
 
+---
+
+博客更新地址：https://vel.life/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9A%91%E6%9C%9F%E9%A1%B9%E7%9B%AE/
+
+> 因为博客本地操作有些问题。所以会更新不及时。近期会抽空解决。
