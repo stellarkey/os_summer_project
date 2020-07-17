@@ -10,23 +10,9 @@
 
 > 我的Daily Schedule：https://github.com/stellarkey/os_summer_project
 
-# 日程表
-
-> 借鉴自https://github.com/yunwei37/os-summer-of-code-daily#TOC
-
-七月：
-
-| Mon  | Tues | Wed  | Thur | Fri  |                             Sat                              |                             Sun                              |
-| :--: | :--: | :--: | :--: | :--: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-|      |      |  1   |  2   |  3   | [4](https://github.com/stellarkey/os_summer_project#74-rust%E8%AF%AD%E8%A8%80%E5%90%AF%E7%A8%8B) | [5](https://github.com/stellarkey/os_summer_project#75-rust%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0) |
-|  6   |  7   |  8   |  9   |  10  |                              11                              |                              12                              |
-|  13  |  14  |  15  |  16  |  17  |                              18                              |                              19                              |
-|  20  |  21  |  22  |  23  |  24  |                              25                              |                              26                              |
-|  27  |  28  |  29  |  30  |      |                                                              |                                                              |
-
 # 总体进度
 
-博客记录：https://vel.life/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9A%91%E6%9C%9F%E9%A1%B9%E7%9B%AE/
+博客记录：[操作系统暑期项目](https://vel.life/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9A%91%E6%9C%9F%E9%A1%B9%E7%9B%AE/)
 
 ## step0
 
@@ -41,6 +27,20 @@ https://github.com/stellarkey/os_summer_project/tree/master/rust%20exercise/codi
 ## step2
 
 
+
+# 日程表
+
+> 借鉴自https://github.com/yunwei37/os-summer-of-code-daily#TOC
+
+七月：
+
+| Mon  | Tues | Wed  | Thur | Fri  |                             Sat                              |                             Sun                              |
+| :--: | :--: | :--: | :--: | :--: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+|      |      |  1   |  2   |  3   | [4](https://github.com/stellarkey/os_summer_project#74-rust%E8%AF%AD%E8%A8%80%E5%90%AF%E7%A8%8B) | [5](https://github.com/stellarkey/os_summer_project#75-rust%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0) |
+|  6   |  7   |  8   |  9   |  10  |                              11                              |                              12                              |
+|  13  |  14  |  15  |  16  |  17  |                              18                              |                              19                              |
+|  20  |  21  |  22  |  23  |  24  |                              25                              |                              26                              |
+|  27  |  28  |  29  |  30  |      |                                                              |                                                              |
 
 # 7.4 rust语言启程
 
@@ -280,3 +280,17 @@ rust的语言特性是如此纷繁，以至于学习它会对学习其他语言�
 
 # 7.17
 
+## 事件1：弄lab0
+
+- 装gdb。
+- 装Xserver调试图形界面。因为GDB调试、QEMU很可能无法避免得要用到图形界面。
+- 装gdb-dashboard。
+- 实际上lab0还没开始。。
+
+## 事件2：Go语言
+
+心血来潮看了一点Go语言，Go语言也是系统编程级语言，也是现代语言，也许跟Rust有一些相似性。至少从目前看来，它们的创新特点有很多类似的地方。
+
+## 预期计划
+
+现在各种工具应该差不多了。万事俱备，只欠东风。
