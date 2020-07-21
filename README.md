@@ -327,3 +327,9 @@ rust的语言特性是如此纷繁，以至于学习它会对学习其他语言�
 ## 事件2：lab0
 
 - 疯狂做完
+- 然而教程中内容太多，可能一时记不下来
+
+## 事件3：RISC-V特权架构
+
+- 看http://crva.ict.ac.cn/documents/RISC-V-Reader-Chinese-v2p1.pdf的第十章。
+- 
