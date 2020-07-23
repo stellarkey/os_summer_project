@@ -1,15 +1,3 @@
-操作系统暑期项目。
-
-# References
-
-[**OS Tutorial Summer of Code 2020**](https://github.com/rcore-os/rCore/wiki/os-tutorial-summer-of-code) 详情页面
-
-[rCore OS - github项目组](https://github.com/rcore-os)
-
-[OS Tutorial Summer of Code 2020 每日学习实践过程记录](https://github.com/rcore-os/rCore-Tutorial/issues/18)
-
-> 我的Daily Schedule：https://github.com/stellarkey/os_summer_project
-
 # 总体进度
 
 博客记录：[操作系统暑期项目](https://vel.life/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9A%91%E6%9C%9F%E9%A1%B9%E7%9B%AE/)
@@ -30,7 +18,7 @@ https://github.com/stellarkey/os_summer_project/tree/master/rust%20exercise/codi
 
 > 实验报告源代码放至：https://github.com/stellarkey/os_summer_project/tree/master/rcore_project
 
-分阶段代码库：lab0，lab1，lab2，lab3，lab4，lab5，lab6。
+分阶段代码库：[lab0](https://github.com/stellarkey/os_summer_project/tree/master/rcore_project/lab0)，[lab1](https://github.com/stellarkey/os_summer_project/tree/master/rcore_project/lab1)，[lab2](https://github.com/stellarkey/os_summer_project/tree/master/rcore_project/lab2)，[lab3](https://github.com/stellarkey/os_summer_project/tree/master/rcore_project/lab3)，[lab4](https://github.com/stellarkey/os_summer_project/tree/master/rcore_project/lab4)，[lab5](https://github.com/stellarkey/os_summer_project/tree/master/rcore_project/lab5)，[lab6](https://github.com/stellarkey/os_summer_project/tree/master/rcore_project/lab6)。
 
 # 7.4 rust语言启程
 
@@ -345,4 +333,21 @@ rust的语言特性是如此纷繁，以至于学习它会对学习其他语言�
 - lab1算是搞完了吧？。。。
 
 ## 事件3：lab2
+
+- 开个头。
+
+# 7.23 lab2
+
+## 事件1：lab2
+
+- 开始看动态内存分配的东西。
+- 本质上跟ucore的逻辑差不多。。
+- 物理内存管理的代码量确实挺大。
+- 涉及到的代码太多了，一步一步手写代码实现实在是难以实现。因此开始大量copy里面的板子，比如algorithms以及各个模板。先跑通再说。如果这里不符合要求，那么也只能如此了。
+- 跑通了。
+
+## 预期计划
+
+- 要开始看看实验题了
+- 明天lab3一定要跑通啊~~~QAQ
 
