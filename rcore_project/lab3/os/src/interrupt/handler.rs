@@ -23,8 +23,6 @@ pub fn handle_interrupt(context: &mut Context, scause: Scause, stval: usize) {
         Trap::Exception(Exception::Breakpoint) => breakpoint(context),
         // 时钟中断
         Trap::Interrupt(Interrupt::SupervisorTimer) => supervisor_timer(context),
-        // lab1-practice
-        Trap::Exception(Exception::LoadFault) => load_fault(context, scause, stval),
         // 其他情况，终止当前线程
         _ => fault(context, scause, stval),
     }
@@ -32,26 +30,11 @@ pub fn handle_interrupt(context: &mut Context, scause: Scause, stval: usize) {
 
 fn breakpoint(context: &mut Context) {
     println!("Breakpoint at 0x{:x}", context.sepc);
-    // context.sepc += 2;
-    context.sepc = 0x0;
+    context.sepc += 2;
 }
 
 fn supervisor_timer(_: &Context) {
     timer::tick();
-}
-
-fn load_fault(context: &mut Context, scause: Scause, stval: usize){
-    if stval == 0x0{
-        panic!("SUCCESS!")
-    }
-    else{
-        panic!(
-            "LoadFault: {:?}\n{:x?}\nstval: {:x}",
-            scause.cause(),
-            context,
-            stval
-        )
-    }
 }
 
 fn fault(context: &mut Context, scause: Scause, stval: usize) {

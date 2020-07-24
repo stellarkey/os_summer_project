@@ -15,7 +15,7 @@ global_asm!(include_str!("entry.asm"));
 
 /// 加上 #[no_mangle] 告诉编译器对于此函数禁用编译期间的名称重整（Name Mangling），即确保编译器生成一个名为 _start 的函数
 #[no_mangle]
-pub extern "C" fn rust_main() -> ! {
+pub extern "C" fn rust_main()  {
     println!("Hello rCore-Tutorial !!!");
     
     interrupt::init();
@@ -27,5 +27,5 @@ pub extern "C" fn rust_main() -> ! {
         }
         
     };
-    panic!("end of rust_main")
+    // panic!("end of rust_main")
 }
