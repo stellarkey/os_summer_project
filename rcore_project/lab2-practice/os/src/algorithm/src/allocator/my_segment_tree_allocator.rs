@@ -9,7 +9,7 @@ pub struct MySegmentTreeAllocator {
 
 impl Allocator for MySegmentTreeAllocator {
     fn new(capacity: usize) -> Self {
-        assert!(capacity >= 8);
+        assert!(capacity >= 1);
 
         // next_power_of_two: 上取整为 最近的 2的幂
         // https://github.com/mattdesl/next-power-of-two

@@ -85,7 +85,12 @@ pub fn test_physical_memory_allocator(){
             Result::Ok(frame_tracker) => frame_tracker,
             Result::Err(err) => panic!("{}", err)
         };
-        println!("{} and {}", frame_0.address(), frame_1.address());
+        let frame_2 = match memory::frame::FRAME_ALLOCATOR.lock().alloc() {
+            Result::Ok(frame_tracker) => frame_tracker,
+            Result::Err(err) => panic!("{}", err)
+        };
+        
+        println!("{} and {} and {}", frame_0.address(), frame_1.address(), frame_2.address());
     }
 }
 
