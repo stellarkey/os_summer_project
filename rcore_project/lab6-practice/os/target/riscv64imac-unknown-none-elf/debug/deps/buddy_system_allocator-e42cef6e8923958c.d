@@ -1,0 +1,9 @@
+/mnt/c/Users/px150/Desktop/os_summer_project/rcore_project/lab6-practice/os/target/riscv64imac-unknown-none-elf/debug/deps/buddy_system_allocator-e42cef6e8923958c.rmeta: /home/vel/.cargo/registry/src/mirrors.ustc.edu.cn-12df342d903acd47/buddy_system_allocator-0.3.9/src/lib.rs /home/vel/.cargo/registry/src/mirrors.ustc.edu.cn-12df342d903acd47/buddy_system_allocator-0.3.9/src/frame.rs /home/vel/.cargo/registry/src/mirrors.ustc.edu.cn-12df342d903acd47/buddy_system_allocator-0.3.9/src/linked_list.rs
+
+/mnt/c/Users/px150/Desktop/os_summer_project/rcore_project/lab6-practice/os/target/riscv64imac-unknown-none-elf/debug/deps/libbuddy_system_allocator-e42cef6e8923958c.rlib: /home/vel/.cargo/registry/src/mirrors.ustc.edu.cn-12df342d903acd47/buddy_system_allocator-0.3.9/src/lib.rs /home/vel/.cargo/registry/src/mirrors.ustc.edu.cn-12df342d903acd47/buddy_system_allocator-0.3.9/src/frame.rs /home/vel/.cargo/registry/src/mirrors.ustc.edu.cn-12df342d903acd47/buddy_system_allocator-0.3.9/src/linked_list.rs
+
+/mnt/c/Users/px150/Desktop/os_summer_project/rcore_project/lab6-practice/os/target/riscv64imac-unknown-none-elf/debug/deps/buddy_system_allocator-e42cef6e8923958c.d: /home/vel/.cargo/registry/src/mirrors.ustc.edu.cn-12df342d903acd47/buddy_system_allocator-0.3.9/src/lib.rs /home/vel/.cargo/registry/src/mirrors.ustc.edu.cn-12df342d903acd47/buddy_system_allocator-0.3.9/src/frame.rs /home/vel/.cargo/registry/src/mirrors.ustc.edu.cn-12df342d903acd47/buddy_system_allocator-0.3.9/src/linked_list.rs
+
+/home/vel/.cargo/registry/src/mirrors.ustc.edu.cn-12df342d903acd47/buddy_system_allocator-0.3.9/src/lib.rs:
+/home/vel/.cargo/registry/src/mirrors.ustc.edu.cn-12df342d903acd47/buddy_system_allocator-0.3.9/src/frame.rs:
+/home/vel/.cargo/registry/src/mirrors.ustc.edu.cn-12df342d903acd47/buddy_system_allocator-0.3.9/src/linked_list.rs:

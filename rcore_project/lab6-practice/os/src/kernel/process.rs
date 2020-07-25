@@ -2,11 +2,17 @@
 
 use super::*;
 
-pub(super) fn sys_exit(code: usize) -> SyscallResult {
+pub fn sys_exit(code: usize) -> SyscallResult {
     println!(
         "thread {} exit with code {}",
         PROCESSOR.lock().current_thread().id,
         code
     );
     SyscallResult::Kill
+}
+
+pub fn sys_get_tid() -> SyscallResult {
+    SyscallResult::Proceed(
+        PROCESSOR.lock().current_thread().id.clone()
+    )
 }

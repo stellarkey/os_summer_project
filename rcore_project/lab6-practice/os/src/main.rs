@@ -56,6 +56,10 @@ use fs::{INodeExt, ROOT_INODE};
 use memory::PhysicalAddress;
 use process::*;
 use xmas_elf::ElfFile;
+use crate::kernel::process::sys_get_tid;
+use crate::kernel::fs::sys_open;
+use crate::kernel::fs::sys_read;
+use alloc::string::String;
 
 // 汇编编写的程序入口，具体见该文件
 global_asm!(include_str!("entry.asm"));
@@ -70,27 +74,37 @@ pub extern "C" fn rust_main(_hart_id: usize, dtb_pa: PhysicalAddress) -> ! {
     drivers::init(dtb_pa);
     fs::init();
 
-    {
-        let mut processor = PROCESSOR.lock();
-        // 创建一个内核进程
-        let kernel_process = Process::new_kernel().unwrap();
-        // 为这个进程创建多个线程，并设置入口均为 sample_process，而参数不同
-        for i in 1..9usize {
-            processor.add_thread(create_kernel_thread(
-                kernel_process.clone(),
-                sample_process as usize,
-                Some(&[i]),
-            ));
-        }
+    println!("Hello world from user mode program!");
+    println!("tid: {}", sys_get_tid());
+    let fd = sys_open("test.file");
+    println!("fd: {}", fd);
+    let mut buffer = [0u8; 1024];
+    let size = sys_read(fd as usize, &mut buffer, 100);
+    if let Ok(string) = String::from_utf8(buffer.iter().copied().take(size as usize).collect()) {
+        print!("{}", string);
     }
 
-    extern "C" {
-        fn __restore(context: usize);
-    }
-    // 获取第一个线程的 Context
-    let context = PROCESSOR.lock().prepare_next_thread();
-    // 启动第一个线程
-    unsafe { __restore(context as usize) };
+    // {
+    //     let mut processor = PROCESSOR.lock();
+    //     // 创建一个内核进程
+    //     let kernel_process = Process::new_kernel().unwrap();
+    //     // 为这个进程创建多个线程，并设置入口均为 sample_process，而参数不同
+    //     for i in 1..9usize {
+    //         processor.add_thread(create_kernel_thread(
+    //             kernel_process.clone(),
+    //             sample_process as usize,
+    //             Some(&[i]),
+    //         ));
+    //     }
+    // }
+
+    // extern "C" {
+    //     fn __restore(context: usize);
+    // }
+    // // 获取第一个线程的 Context
+    // let context = PROCESSOR.lock().prepare_next_thread();
+    // // 启动第一个线程
+    // unsafe { __restore(context as usize) };
     unreachable!()
 }
 
