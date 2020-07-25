@@ -1,0 +1,10 @@
+/mnt/c/Users/px150/Desktop/os_summer_project/rcore_project/lab4-practice/os/target/debug/deps/thread_local-05f3d0984ed3e172.rmeta: /home/vel/.cargo/registry/src/mirrors.ustc.edu.cn-12df342d903acd47/thread_local-1.0.1/src/lib.rs /home/vel/.cargo/registry/src/mirrors.ustc.edu.cn-12df342d903acd47/thread_local-1.0.1/src/thread_id.rs /home/vel/.cargo/registry/src/mirrors.ustc.edu.cn-12df342d903acd47/thread_local-1.0.1/src/unreachable.rs /home/vel/.cargo/registry/src/mirrors.ustc.edu.cn-12df342d903acd47/thread_local-1.0.1/src/cached.rs
+
+/mnt/c/Users/px150/Desktop/os_summer_project/rcore_project/lab4-practice/os/target/debug/deps/libthread_local-05f3d0984ed3e172.rlib: /home/vel/.cargo/registry/src/mirrors.ustc.edu.cn-12df342d903acd47/thread_local-1.0.1/src/lib.rs /home/vel/.cargo/registry/src/mirrors.ustc.edu.cn-12df342d903acd47/thread_local-1.0.1/src/thread_id.rs /home/vel/.cargo/registry/src/mirrors.ustc.edu.cn-12df342d903acd47/thread_local-1.0.1/src/unreachable.rs /home/vel/.cargo/registry/src/mirrors.ustc.edu.cn-12df342d903acd47/thread_local-1.0.1/src/cached.rs
+
+/mnt/c/Users/px150/Desktop/os_summer_project/rcore_project/lab4-practice/os/target/debug/deps/thread_local-05f3d0984ed3e172.d: /home/vel/.cargo/registry/src/mirrors.ustc.edu.cn-12df342d903acd47/thread_local-1.0.1/src/lib.rs /home/vel/.cargo/registry/src/mirrors.ustc.edu.cn-12df342d903acd47/thread_local-1.0.1/src/thread_id.rs /home/vel/.cargo/registry/src/mirrors.ustc.edu.cn-12df342d903acd47/thread_local-1.0.1/src/unreachable.rs /home/vel/.cargo/registry/src/mirrors.ustc.edu.cn-12df342d903acd47/thread_local-1.0.1/src/cached.rs
+
+/home/vel/.cargo/registry/src/mirrors.ustc.edu.cn-12df342d903acd47/thread_local-1.0.1/src/lib.rs:
+/home/vel/.cargo/registry/src/mirrors.ustc.edu.cn-12df342d903acd47/thread_local-1.0.1/src/thread_id.rs:
+/home/vel/.cargo/registry/src/mirrors.ustc.edu.cn-12df342d903acd47/thread_local-1.0.1/src/unreachable.rs:
+/home/vel/.cargo/registry/src/mirrors.ustc.edu.cn-12df342d903acd47/thread_local-1.0.1/src/cached.rs:

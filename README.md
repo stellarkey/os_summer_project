@@ -20,6 +20,8 @@ https://github.com/stellarkey/os_summer_project/tree/master/rust%20exercise/codi
 
 分阶段代码库：[lab0](https://github.com/stellarkey/os_summer_project/tree/master/rcore_project/lab0)，[lab1](https://github.com/stellarkey/os_summer_project/tree/master/rcore_project/lab1)，[lab2](https://github.com/stellarkey/os_summer_project/tree/master/rcore_project/lab2)，[lab3](https://github.com/stellarkey/os_summer_project/tree/master/rcore_project/lab3)，[lab4](https://github.com/stellarkey/os_summer_project/tree/master/rcore_project/lab4)，[lab5](https://github.com/stellarkey/os_summer_project/tree/master/rcore_project/lab5)，[lab6](https://github.com/stellarkey/os_summer_project/tree/master/rcore_project/lab6)。
 
+实验题目录：[lab1实验](https://github.com/stellarkey/os_summer_project/tree/master/rcore_project/lab1-practice)，[lab2实验](https://github.com/stellarkey/os_summer_project/tree/master/rcore_project/lab2-practice)，[lab3实验](https://github.com/stellarkey/os_summer_project/tree/master/rcore_project/lab3-practice)，[lab4实验](https://github.com/stellarkey/os_summer_project/tree/master/rcore_project/lab4-practice)，[lab6实验](https://github.com/stellarkey/os_summer_project/tree/master/rcore_project/lab6-practice)。
+
 # 7.4 rust语言启程
 
 > [Rust by Example](https://doc.rust-lang.org/rust-by-example/)
@@ -378,17 +380,23 @@ rust的语言特性是如此纷繁，以至于学习它会对学习其他语言�
 - 好了，分析了一下已有的线段树实现，发现并没有想象中那么难，自己重新实现了一下，效果还可以。
 - 完成了。
 
-# 7.25 肝就完了！
+# 7.25 ~~肝就完了~~！
 
 ## 事件1：lab3实验题
 
 - 开始肝。
 
-## 事件2：跑通lab4
+## 事件2：跑通lab4、lab5、lab6
 
-## 事件3：跑通lab5
-
-## 事件4：跑通lab6
+- 因为确定直接跑通lab4，所以采用了代码仓库中lab-4分支。
+- 没时间自己一点点地抄和找茬了。
+- lab5和lab6就不单独再弄了。
 
 ## 事件5：lab4实验题
+
+- 水完了、QAQ
+
+## 事件6：lab6实验题
+
+- 
 

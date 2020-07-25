@@ -17,6 +17,8 @@ pub struct Thread {
     pub stack: Range<VirtualAddress>,
     /// 所属的进程
     pub process: Arc<Process>,
+    /// stride 算法优先级
+    pub priority: usize,
     /// 用 `Mutex` 包装一些可变的变量
     pub inner: Mutex<ThreadInner>,
 }
@@ -74,6 +76,7 @@ impl Thread {
             },
             stack,
             process,
+            priority: 233,     // 这里默认搞个常数先吧
             inner: Mutex::new(ThreadInner {
                 context: Some(context),
                 sleeping: false,
@@ -88,6 +91,42 @@ impl Thread {
     pub fn inner(&self) -> spin::MutexGuard<ThreadInner> {
         self.inner.lock()
     }
+
+    pub fn clone_(&self, current_context: Context) -> MemoryResult<Arc<Thread>> {
+        println!("开始克隆");
+
+        // 让所属进程分配并映射一段空间，作为线程的栈
+        let stack = self.process.alloc_page_range(STACK_SIZE, Flags::READABLE | Flags::WRITABLE)?;
+
+        // 逐字节拷贝栈
+        for i in 0..STACK_SIZE {
+            *VirtualAddress(stack.start.0 + i).deref::<u8>() = *VirtualAddress(self.stack.start.0 + i).deref::<u8>()
+        }
+
+        let mut context = current_context.clone();
+
+        // 设置栈指针（因为重新分配了一个栈，这也是唯一需要改的地方）
+        context.set_sp( usize::from(stack.start) -  usize::from(self.stack.start) + current_context.sp()  );
+
+        // 打包成线程
+        let thread = Arc::new(Thread {
+            id: unsafe {
+                THREAD_COUNTER += 1;
+                THREAD_COUNTER
+            },
+            stack,
+            process: Arc::clone(&self.process),
+            priority: self.priority,
+            inner: Mutex::new(ThreadInner {
+                context: Some(context),
+                sleeping: false,
+                dead: false,
+            }),
+        });
+
+        Ok(thread)
+    }
+
 }
 
 /// 通过线程 ID 来判等

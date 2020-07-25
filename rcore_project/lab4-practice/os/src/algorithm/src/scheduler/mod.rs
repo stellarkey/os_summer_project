@@ -2,6 +2,7 @@
 
 mod fifo_scheduler;
 mod hrrn_scheduler;
+mod stride_scheduler;
 
 /// 线程调度器
 ///
@@ -27,5 +28,6 @@ pub trait Scheduler<ThreadType: Clone + Eq>: Default {
 
 pub use fifo_scheduler::FifoScheduler;
 pub use hrrn_scheduler::HrrnScheduler;
+pub use stride_scheduler::StrideScheduler;
 
 pub type SchedulerImpl<T> = HrrnScheduler<T>;

@@ -72,6 +72,13 @@ impl Processor {
         self.current_thread.as_ref().unwrap().clone()
     }
 
+    /// clone 当前线程
+    pub fn clone_current_thread(&mut self, context: &Context) {
+        let clone_thread = self.current_thread.as_ref().unwrap()
+            .clone_(*context).unwrap();
+        self.add_thread(clone_thread);
+    }
+
     /// 激活下一个线程的 `Context`
     pub fn prepare_next_thread(&mut self) -> *mut Context {
         // 向调度器询问下一个线程

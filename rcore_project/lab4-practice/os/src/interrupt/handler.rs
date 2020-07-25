@@ -88,7 +88,14 @@ fn supervisor_timer(context: &mut Context) -> *mut Context {
 /// 处理外部中断，只实现了键盘输入
 fn supervisor_external(context: &mut Context) -> *mut Context {
     let mut c = console_getchar();
-    if c <= 255 {
+    if c == 3{  // `Ctrl + C`
+        PROCESSOR.lock().kill_current_thread();
+        PROCESSOR.lock().prepare_next_thread();
+    }
+    else if c == 'c' as usize{   // clone
+        PROCESSOR.lock().clone_current_thread(context);
+    }
+    else if c <= 255 {
         if c == '\r' as usize {
             c = '\n' as usize;
         }
