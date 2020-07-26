@@ -1,1 +1,0 @@
-{"rustc":11719010198259268628,"features":"[]","target":3762074461897733833,"profile":13134100034870027236,"path":13107122500203201796,"deps":[],"local":[{"CheckDepInfo":{"dep_info":"riscv64imac-unknown-none-elf/debug/.fingerprint/device_tree-492868c3a3c4fc2a/dep-lib-device_tree"}}],"rustflags":["-C","link-arg=-Tsrc/linker.ld"],"metadata":5786782667802488811,"config":0}
